@@ -36,9 +36,7 @@ overlay.addEventListener('click', closeModal);
 //hitting the ␛ key to close the modal
 document.addEventListener('keydown', function (e) {
   console.log(e.key);
-  if (e.key === 'Escape') {
-    if (!modal.classList.contains('hidden')) {
-      closeModal();
-    }
+  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+    closeModal();
   }
 });
